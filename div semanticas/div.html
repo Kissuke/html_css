@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div semantica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>testando tags semanticas</h1>
+        <nav aria-label="Menu principal">
+            <a href="#">home</a>
+            <a href="#">sobre nos</a>
+            <a href="#">servicos</a>
+            <a href="#">contato</a>
+            <a href="#">loja</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>titulo do artigo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab provident beatae minima tenetur,
+                perspiciatis adipisci aperiam, minus, similique doloremque ullam expedita cum a non dolores.
+                Voluptatibus labore velit pariatur vel.</p>
+            <aside aria-label="Informações sobre o autor">
+                <small>autor do artigo</small>
+            </aside>
+        </article>
+        <section>
+            <h2>titulo da secao</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam error necessitatibus id voluptate ipsa
+                dolorem nostrum, ipsam non nulla repudiandae libero enim minima. Maxime officia velit nihil cumque
+                quisquam.</p>
+        </section>
+        <section>
+            <h2>titulo da segunda secao</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo mollitia voluptatibus odio corrupti sit
+                in? Ab, id aliquam totam nobis enim saepe. Ex perspiciatis eos tempore quidem accusantium. Eos,
+                adipisci!</p>
+        </section>
+        <article>
+            <h2>titulo do segundo artigo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ad at necessitatibus, beatae
+                reprehenderit aspernatur adipisci perferendis dolorum accusamus voluptatibus dolore sapiente optio est
+                quos corporis. Minus magni officiis mollitia?</p>
+            <aside aria-label="Informações sobre o autor">
+                <small>autor do segundo artigo</small>
+            </aside>
+        </article>
+    </main>
+    <footer aria-label="Rodapé do site">
+        <p>Desenvolvido por Pedro Henrique Silva de Alcântara — 11/04/2025</p>
+    </footer>
+
+    <button onclick="document.body.classList.toggle('dark-mode')">Modo Escuro</button>
+</body>
+
+</html>

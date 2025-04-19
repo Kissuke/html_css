@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* Define a codificação de caracteres como UTF-8 (padrão que aceita acentuação e caracteres especiais) */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define a fonte padrão para todo o site */
+    /* essas tres linhas abaixo farao com que minhas box nao cresam mais do que eu mandei, os elementos dentro delas iram ter que se adaptar ao tamanho da box*/
+    margin: 0;
+    /* Remove a margem padrão dos elementos */
+    padding: 0;
+    /* Remove o preenchimento padrão dos elementos */
+    box-sizing: border-box;
+    /* Faz com que o tamanho dos elementos inclua padding e borda no cálculo do width/height */
+}
+
+h1 {
+    color: #042940;
+    /* Define a cor do texto do h1 */
+    text-shadow: 1px 1px 2px #031826a8;
+    /* Adiciona sombra no texto (x, y, blur, cor) */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 3.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: #005C53;
+    /* Cor do texto do h2 */
+    text-shadow: 1px 1px 2px #002b27ae;
+    /* Sombra no texto do h2 */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    /* Faz o texto do parágrafo ocupar toda a linha, alinhado dos dois lados */
+}
+
+body {
+    background-image: linear-gradient(to bottom, #D6D58E 60%, #DBF227);
+    /* Aplica um degradê vertical (de cima pra baixo) indo da cor #D6D58E até #DBF227, 60% da tela na primeira cor */
+    height: 100vh;
+    /* Faz o body ocupar 100% da altura da tela visível */
+    padding: 10px;
+    /* Espaçamento interno (distância do conteúdo para as bordas do body) */
+}
+
+main {
+    max-width: 600px;
+    /* Largura máxima de 600px para o main (não aumenta mais que isso) */
+    width: 90%;
+    /* Ocupará 90% da largura da tela se for menor que 600px */
+    margin: auto;
+    /* Centraliza o main horizontalmente */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Cor de fundo branca com 70% de opacidade (transparência leve) */
+    padding: 10px;
+    /* Espaçamento interno do main */
+    border-radius: 10px;
+    /* Bordas arredondadas com raio de 10px */
+    box-shadow: 5px 5px 10px #7b7b519f;
+    /* Sombra ao redor da caixa (x, y, blur, cor) */
+}
+
+h1,
+h2,
+p {
+    margin-bottom: 10px;
+    /* Cria um espaço de 10px abaixo dos títulos e parágrafos */
+}
+.titulos > p {
+    display: none;
+}
+
+.titulos:hover > p {
+    display: block;
+}
+
+.titulos:hover > h2 {
+    background-color: #DBF227;
+    transition: 0.3s;
+}
+
+.titulos:hover {
+    background-color: #DBF227;
+    transition: 0.3s;
+}
+.titulos {
+    padding: 10px;
+}
+
+#principal:hover {
+    background-color: #DBF227;
+}
