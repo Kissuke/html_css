@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Se quiser garantir que o fundo é sempre roxo */
+}
+        #container {
+            position: relative;
+            background-color: blueviolet;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        #conteudo {
+            position: absolute;
+            background-color: darkgoldenrod;
+            max-width: 400px;
+            max-height: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            overflow: auto;
+        }
+        #conteudo::-webkit-scrollbar {
+    width: 7px; /* Largura da scrollbar */
+}
+#conteudo::-webkit-scrollbar-thumb {
+    background-color: rgba(18, 95, 95, 0.363);
+    border-radius: 10px;
+}
+#conteudo::-webkit-scrollbar-track {
+    background-color: #d3d3d3bb;
+}
+    </style>
+</head>
+
+<body>
+
+    <section id="container">
+        <article id="conteudo">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempore! Dolore soluta incidunt a nam
+                dolorem nobis harum commodi provident? Magni sunt consequatur libero quis commodi iure mollitia! Eaque,
+                quae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempore! Dolore soluta incidunt a nam
+                dolorem nobis harum commodi provident? Magni sunt consequatur libero quis commodi iure mollitia! Eaque,
+                quae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempore! Dolore soluta incidunt a nam
+                dolorem nobis harum commodi provident? Magni sunt consequatur libero quis commodi iure mollitia! Eaque,
+                quae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempore! Dolore soluta incidunt a nam
+                dolorem nobis harum commodi provident? Magni sunt consequatur libero quis commodi iure mollitia! Eaque,
+                quae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempore! Dolore soluta incidunt a nam
+                dolorem nobis harum commodi provident? Magni sunt consequatur libero quis commodi iure mollitia! Eaque,
+                quae?</p>
+        </article>
+    </section>
+
+</body>
+
+</html>
