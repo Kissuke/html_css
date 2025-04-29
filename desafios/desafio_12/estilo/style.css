@@ -42,7 +42,7 @@ header p {
 }
 
 a {
-    cursor: ;
+    cursor: pointer;
     text-decoration: none;
     color: white;
     font-weight: bold;
