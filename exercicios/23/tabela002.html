@@ -51,6 +51,16 @@
         .position {
             text-align: center;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
     </style>
 </head>
 
@@ -72,9 +82,9 @@
         <caption>meus paises preferidos e suas populacoes</caption>
         <thead>
             <tr>
-                <th>posicao</th>
-                <th>pais</th>
-                <th>populacao</th>
+                <th scope="col">posicao</th>
+                <th scope="col">pais</th>
+                <th scope="col">populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -107,7 +117,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="2"><strong>Quantidade total de pessoas nesses países</strong></th>
+                <th colspan="2" scope="row"><strong>Quantidade total de pessoas nesses países</strong></th>
                 <th class="num"><strong>803.942.413</strong></th>
             </tr>
         </tfoot>
